@@ -1,0 +1,146 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/img"
+public_folder: "/assets/img"
+site_url: https://vianet.capital
+display_url: https://vianet.capital
+logo_url: https://vianet.capital/assets/icons/icon-192.png
+
+collections:
+  - name: homepage
+    label: Homepage
+    files:
+      - name: content
+        label: Homepage content
+        file: content.json
+        description: Everything on vianet.capital. Edit, then press Publish.
+        fields:
+          - name: site
+            label: Site settings
+            widget: object
+            collapsed: true
+            fields:
+              - { name: title, label: Browser and share title, widget: string }
+              - { name: description, label: Search description, widget: text }
+              - { name: url, label: Site URL, widget: string }
+              - { name: email, label: Contact email, widget: string }
+              - { name: form_endpoint, label: "Form endpoint (Formspark or Basin URL)", widget: string, required: false }
+
+          - name: hero
+            label: 1 — Hero
+            widget: object
+            fields:
+              - { name: image, label: Background image, widget: image }
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: headline, label: Headline, widget: string, hint: "Shown in uppercase. Keep it to two lines." }
+              - { name: lede, label: Paragraph, widget: text }
+              - { name: button, label: Button, widget: string }
+
+          - name: premise
+            label: 2 — The premise
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: statement, label: Statement, widget: text }
+              - { name: supporting, label: Supporting paragraph, widget: text }
+
+          - name: network
+            label: 3 — The network
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: roles, label: Roles, widget: list, hint: "Seven fits the row neatly. Six or eight also work." }
+              - { name: paragraph, label: Paragraph, widget: text }
+              - { name: supporting, label: Supporting paragraph, widget: text }
+
+          - name: what
+            label: 4 — What we do
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - name: blocks
+                label: Blocks
+                widget: list
+                max: 3
+                fields:
+                  - { name: index, label: Number, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+
+          - name: band
+            label: 5 — Image band
+            widget: object
+            fields:
+              - { name: image, label: Background image, widget: image }
+              - { name: quote_line_1, label: Quote line 1, widget: string }
+              - { name: quote_line_2, label: Quote line 2, widget: string }
+
+          - name: how
+            label: 6 — How we work
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - name: steps
+                label: Steps
+                widget: list
+                fields:
+                  - { name: index, label: Number, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+
+          - name: focus
+            label: 7 — Where we look
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - name: cells
+                label: Cells
+                widget: list
+                max: 4
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+
+          - name: tagline
+            label: 8 — Tagline
+            widget: object
+            collapsed: true
+            fields:
+              - { name: before, label: Before VIA, widget: string }
+              - { name: via, label: VIA, widget: string }
+              - { name: middle, label: Between VIA and NET, widget: string }
+              - { name: net, label: NET, widget: string }
+              - { name: after, label: After NET, widget: string }
+              - { name: triad, label: Triad, widget: string }
+
+          - name: contact
+            label: 9 — Contact
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: supporting, label: Supporting paragraph, widget: text }
+              - { name: offices, label: Offices, widget: string }
+              - { name: reach, label: Reach line, widget: string }
+              - { name: button, label: Button, widget: string }
+
+          - name: footer
+            label: 10 — Footer
+            widget: object
+            collapsed: true
+            fields:
+              - { name: legal, label: Copyright line, widget: string }
+              - { name: right, label: Right-hand line, widget: string }
+
+          - name: nav
+            label: Navigation
+            widget: list
+            collapsed: true
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: anchor, label: Anchor id, widget: string }

@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "Vianet Capital — Where access becomes opportunity",
+    "description": "Vianet Capital is an independent advisory, investment and venture-building firm working where access, judgement and execution decide the outcome.",
+    "url": "https://vianet.capital",
+    "email": "info@vianet.capital",
+    "form_endpoint": ""
+  },
+  "nav": [
+    { "label": "Approach", "anchor": "approach" },
+    { "label": "Network", "anchor": "network" },
+    { "label": "What we do", "anchor": "what" },
+    { "label": "Focus", "anchor": "focus" },
+    { "label": "Contact", "anchor": "contact" }
+  ],
+  "hero": {
+    "image": "/assets/img/hero.jpg",
+    "eyebrow": "Advisory · Investments · Ventures",
+    "headline": "Where access becomes opportunity",
+    "lede": "Vianet Capital works where relationships, judgement and execution decide the outcome — advising founders and investors, taking a deliberate number of positions, and building ventures alongside the people running them.",
+    "button": "Start a conversation"
+  },
+  "premise": {
+    "eyebrow": "The premise",
+    "statement": "Most opportunities are not won on capital. They are won on who you can reach, what you know before the room fills, and whether you can execute once the decision is made.",
+    "supporting": "Vianet is built around that sequence. We would rather hold a handful of positions we understand than a portfolio we administer."
+  },
+  "network": {
+    "eyebrow": "The network",
+    "heading": "Deliberately small. Deliberately connected.",
+    "roles": ["Strategists","Operators","Relationship builders","Advisors","Bankers","Investors","Entrepreneurs"],
+    "paragraph": "Vianet brings these people together around a single outcome — strategists, operators, relationship builders, advisors, bankers, investors and entrepreneurs, united by a commitment to getting difficult things done.",
+    "supporting": "We work across disciplines rather than within one, assembling the right people and capabilities around the outcome being pursued."
+  },
+  "what": {
+    "eyebrow": "What we do",
+    "heading": "Three lines. One decision-making standard.",
+    "blocks": [
+      { "index": "01", "title": "Advisory", "text": "Strategic, commercial, structural and transaction advice for founders, investors and boards. Deal evaluation, market entry, and the structuring work that decides whether a good idea survives contact with the market." },
+      { "index": "02", "title": "Investments", "text": "Selective positions in businesses where we can contribute more than capital. We take a deliberate number of positions and stay close to them." },
+      { "index": "03", "title": "Ventures", "text": "We co-found and build. Where the thesis is strong and the operating gap is ours to close, we build the company rather than wait for one to appear." }
+    ]
+  },
+  "band": {
+    "image": "/assets/img/band.jpg",
+    "quote_line_1": "Relationships create access.",
+    "quote_line_2": "Context creates advantage."
+  },
+  "how": {
+    "eyebrow": "How we work",
+    "heading": "The sequence does not change.",
+    "steps": [
+      { "index": "01", "title": "Access", "text": "By the time a process opens, most of it is decided. We start earlier, from relationships we have held for years." },
+      { "index": "02", "title": "Judgement", "text": "We say what we think, including when the answer is no. Conviction is expensive, so we spend it rarely and well." },
+      { "index": "03", "title": "Structure", "text": "Terms, governance and incentives decide who keeps the value. We write them ourselves." },
+      { "index": "04", "title": "Execution", "text": "We stay after the decision. The work that counts usually starts once it gets difficult." }
+    ]
+  },
+  "focus": {
+    "eyebrow": "Where we look",
+    "heading": "Selective by design.",
+    "cells": [
+      { "title": "Sectors", "text": "Sector-agnostic by mandate, concentrated by conviction: technology and applied AI, financial services, healthcare, lifestyle and hospitality, real assets." },
+      { "title": "Geographies", "text": "The UAE and wider MENA region, with active relationships across Asia, the UK, Europe and North America." },
+      { "title": "Stage", "text": "Early revenue through growth. Situations where the decision is difficult and the network matters." },
+      { "title": "Engagement", "text": "Advisory mandates, direct positions, and founder-level involvement in ventures we help start." }
+    ]
+  },
+  "tagline": {
+    "before": "Driven ",
+    "via": "VIA",
+    "middle": " a ",
+    "net": "NET",
+    "after": "work of People, Information & Technology.",
+    "triad": "Relationships · Opportunity · Capital"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Start a conversation.",
+    "supporting": "If there is a situation where access, judgement or execution is the constraint, we would like to hear about it.",
+    "offices": "Dubai · London",
+    "reach": "Global relationships and access. We are a referral-driven business — an introduction is the best way to reach us.",
+    "button": "Send message"
+  },
+  "footer": {
+    "legal": "© 2026 Vianet Capital. All rights reserved.",
+    "right": "Advisory · Investments · Ventures"
+  }
+}
