@@ -17,13 +17,8 @@ const blocks = c.what.blocks.map(b =>
 const steps = c.how.steps.map(s =>
   `<div class="step"><div class="n">${esc(s.index)}</div><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></div>`).join('\n      ');
 const cells = c.focus.cells.map(f => `<div><h4>${esc(f.title)}</h4><p>${esc(f.text)}</p></div>`).join('');
-const formOpen = c.site.form_endpoint
-  ? `<form class="form" action="${esc(c.site.form_endpoint)}" method="POST">`
-  : `<div class="form">`;
-const formClose = c.site.form_endpoint ? `</form>` : `</div>`;
-const submit = c.site.form_endpoint
-  ? `<button class="submit" type="submit">${esc(c.contact.button)}</button>`
-  : `<button class="submit" type="button">${esc(c.contact.button)}</button>`;
+const panel = c.contact.panel_items.map(i =>
+  `<div class="pitem"><span class="pn">${esc(i.index)}</span><div><h4>${esc(i.title)}</h4><p>${esc(i.text)}</p></div></div>`).join('\n      ');
 
 const html = `<!DOCTYPE html>
 <html lang="en"><head>
@@ -143,13 +138,11 @@ const html = `<!DOCTYPE html>
         <span style="color:#7E8F9C;font-size:14px">${esc(c.contact.reach)}</span>
       </p>
     </div>
-    ${formOpen}
-      <div class="field"><label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name"></div>
-      <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>
-      <div class="field"><label for="co">Company</label><input id="co" name="company" type="text" autocomplete="organization"></div>
-      <div class="field"><label for="m">What would you like to discuss?</label><textarea id="m" name="message" rows="4"></textarea></div>
-      ${submit}
-    ${formClose}
+    <div class="cpanel">
+      <p class="eyebrow">${esc(c.contact.panel_title)}</p>
+      ${panel}
+      <a class="cmail" href="mailto:${esc(c.site.email)}">${esc(c.contact.panel_cta)} — ${esc(c.site.email)}</a>
+    </div>
   </div>
 </section>
 </main>

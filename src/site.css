@@ -151,6 +151,22 @@ section{padding:clamp(84px,11vh,150px) 0}
 .submit:hover{background:#215F8E}
 .contact a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(201,199,191,.45)}
 
+
+/* contact panel */
+.cpanel{border:1px solid rgba(201,199,191,.26);padding:clamp(28px,4vw,46px)}
+.cpanel .eyebrow{color:#8FA0AE;margin-bottom:30px}
+.pitem{display:grid;grid-template-columns:44px 1fr;gap:6px;padding:20px 0;
+  border-top:1px solid rgba(201,199,191,.18)}
+.pitem:first-of-type{border-top:0;padding-top:0}
+.pn{font-size:11px;font-weight:600;letter-spacing:.18em;color:#8FA0AE;padding-top:5px}
+.pitem h4{margin:0 0 6px;font-size:19px;font-weight:300;color:#fff}
+.pitem p{margin:0;font-size:15px;color:#AEBDC9;line-height:1.65}
+.cmail{display:inline-block;margin-top:30px;padding:16px 30px;background:var(--blue);color:#fff;
+  text-decoration:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  transition:background .3s}
+.cmail:hover{background:#215F8E}
+@media (max-width:900px){.pitem{grid-template-columns:1fr;gap:2px}.pn{padding-top:0;margin-bottom:4px}}
+
 /* footer */
 footer{background:#07131E;color:#8FA0AE;padding:70px 0 44px;font-size:14px}
 footer .top{display:flex;justify-content:space-between;gap:40px;align-items:flex-start;

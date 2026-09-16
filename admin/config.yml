@@ -25,7 +25,6 @@ collections:
               - { name: description, label: Search description, widget: text }
               - { name: url, label: Site URL, widget: string }
               - { name: email, label: Contact email, widget: string }
-              - { name: form_endpoint, label: "Form endpoint (Formspark or Basin URL)", widget: string, required: false }
 
           - name: hero
             label: 1 — Hero
@@ -126,8 +125,17 @@ collections:
               - { name: heading, label: Heading, widget: string }
               - { name: supporting, label: Supporting paragraph, widget: text }
               - { name: offices, label: Offices, widget: string }
-              - { name: reach, label: Reach line, widget: string }
-              - { name: button, label: Button, widget: string }
+              - { name: reach, label: Reach line, widget: text }
+              - { name: panel_title, label: "Panel heading", widget: string }
+              - name: panel_items
+                label: "Before you write — items"
+                widget: list
+                max: 4
+                fields:
+                  - { name: index, label: Number, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: text }
+              - { name: panel_cta, label: "Button label", widget: string }
 
           - name: footer
             label: 10 — Footer
