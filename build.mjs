@@ -131,7 +131,7 @@ const html = `<!DOCTYPE html>
   <div class="wrap">
     <p class="eyebrow">${esc(c.ventures.eyebrow)}</p>
     <h2 class="statement">${esc(c.ventures.heading)}</h2>
-    <div class="vrow">${ventures}</div>
+    <div class="vgroups">${ventures}</div>
   </div>
 </section>
 
