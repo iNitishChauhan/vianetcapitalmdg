@@ -69,8 +69,32 @@ collections:
                   - { name: title, label: Title, widget: string }
                   - { name: text, label: Text, widget: text }
 
+
+          - name: ventures
+            label: "5 — Selected ventures"
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - name: groups
+                label: Groups
+                widget: list
+                hint: "Each group is a row band — Current ventures, Realised, Operating companies, Not for profit."
+                fields:
+                  - { name: title, label: Group title, widget: string }
+                  - { name: note, label: Group note, widget: string }
+                  - { name: half, label: "Half width (pairs with the next half-width group on one line)", widget: boolean, required: false, default: false }
+                  - name: items
+                    label: Ventures in this group
+                    widget: list
+                    fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: label, label: "Relationship (Built / Investment / Advisory / Partner)", widget: string }
+                      - { name: url, label: "Website (leave blank for no link)", widget: string, required: false }
+                      - { name: muted, label: "Unnamed (sets italic, e.g. Stealth)", widget: boolean, required: false, default: false }
+
           - name: band
-            label: 5 — Image band
+            label: 6 — Image band
             widget: object
             fields:
               - { name: image, label: Background image, widget: image }
@@ -78,7 +102,7 @@ collections:
               - { name: quote_line_2, label: Quote line 2, widget: string }
 
           - name: how
-            label: 6 — How we work
+            label: 7 — How we work
             widget: object
             fields:
               - { name: eyebrow, label: Eyebrow, widget: string }
@@ -92,7 +116,7 @@ collections:
                   - { name: text, label: Text, widget: text }
 
           - name: focus
-            label: 7 — Where we look
+            label: 8 — Where we look
             widget: object
             fields:
               - { name: eyebrow, label: Eyebrow, widget: string }
@@ -106,7 +130,7 @@ collections:
                   - { name: text, label: Text, widget: text }
 
           - name: tagline
-            label: 8 — Tagline
+            label: 9 — Tagline
             widget: object
             collapsed: true
             fields:
@@ -118,7 +142,7 @@ collections:
               - { name: triad, label: Triad, widget: string }
 
           - name: contact
-            label: 9 — Contact
+            label: 10 — Contact
             widget: object
             fields:
               - { name: eyebrow, label: Eyebrow, widget: string }
@@ -138,7 +162,7 @@ collections:
               - { name: panel_cta, label: "Button label", widget: string }
 
           - name: footer
-            label: 10 — Footer
+            label: 11 — Footer
             widget: object
             collapsed: true
             fields:

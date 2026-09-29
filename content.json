@@ -19,6 +19,10 @@
       "anchor": "what"
     },
     {
+      "label": "How we work",
+      "anchor": "how"
+    },
+    {
       "label": "Focus",
       "anchor": "focus"
     },
@@ -72,6 +76,140 @@
         "index": "03",
         "title": "Ventures",
         "text": "We co-found and build. Where the thesis is strong and the operating gap is ours to close, we build the company rather than wait for one to appear."
+      }
+    ]
+  },
+  "ventures": {
+    "eyebrow": "Selected ventures",
+    "heading": "Built, backed, advised — and in some cases, concluded.",
+    "groups": [
+      {
+        "title": "Current ventures",
+        "note": "The handful we are closest to.",
+        "items": [
+          {
+            "name": "Fero",
+            "label": "Built",
+            "url": "https://www.fero.ai/"
+          },
+          {
+            "name": "Test Mu",
+            "label": "Investment",
+            "url": "https://www.testmuai.com/"
+          },
+          {
+            "name": "Connect Machine",
+            "label": "Built · Partner",
+            "url": "https://www.connectmachine.ai/"
+          },
+          {
+            "name": "Infinite Analytics",
+            "label": "Investment · Advisory",
+            "url": "https://infiniteanalytics.com/"
+          },
+          {
+            "name": "Stealth",
+            "label": "Built · Investment",
+            "url": "",
+            "muted": true
+          },
+          {
+            "name": "Stealth",
+            "label": "Built · Advisory",
+            "url": "",
+            "muted": true
+          }
+        ],
+        "half": false
+      },
+      {
+        "title": "Realised",
+        "note": "Investments exited, mandates concluded.",
+        "items": [
+          {
+            "name": "Jeebly",
+            "label": "Investment · Advisory",
+            "url": "https://jeebly.com/"
+          },
+          {
+            "name": "SimplAI",
+            "label": "Investment · Advisory",
+            "url": "https://simplai.ai/"
+          },
+          {
+            "name": "Metaphysiks",
+            "label": "Investment · Advisory",
+            "url": ""
+          },
+          {
+            "name": "Contractors Direct",
+            "label": "Investment",
+            "url": "https://contractors.direct/"
+          },
+          {
+            "name": "Project People",
+            "label": "Investment",
+            "url": "https://projectpeople.ae/"
+          },
+          {
+            "name": "Olive Gaea",
+            "label": "Advisory",
+            "url": "https://www.olivegaea.com/"
+          }
+        ],
+        "half": false
+      },
+      {
+        "title": "Operating companies",
+        "note": "Established businesses, run by their own management.",
+        "items": [
+          {
+            "name": "Exigo–Botta",
+            "label": "Built · Partner",
+            "url": "http://www.botta-equipment.com/"
+          },
+          {
+            "name": "Agilitics",
+            "label": "Built · Partner",
+            "url": "https://agiliticstech.com/"
+          },
+          {
+            "name": "neuliv realty",
+            "label": "Built · Partner",
+            "url": "https://www.neulivrealty.com/"
+          }
+        ],
+        "half": false
+      },
+      {
+        "title": "Not for profit",
+        "note": "Built for the region, not for return.",
+        "items": [
+          {
+            "name": "MENA AI",
+            "label": "Founded",
+            "url": "https://www.joinmena.ai/"
+          },
+          {
+            "name": "Dhai Akshar",
+            "label": "Patronage",
+            "url": "https://www.dhaiakshar.org/"
+          }
+        ],
+        "half": true
+      },
+      {
+        "title": "Mandated transactions",
+        "note": "Capital raising and M&A. Confidential by agreement.",
+        "items": [
+          {
+            "name": "Undisclosed",
+            "label": "Advisory · Co-investment",
+            "url": "",
+            "muted": true
+          }
+        ],
+        "half": true
       }
     ]
   },

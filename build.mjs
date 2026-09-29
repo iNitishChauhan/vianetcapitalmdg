@@ -16,6 +16,37 @@ const blocks = c.what.blocks.map(b =>
   `<div class="cap"><span class="idx">${esc(b.index)}</span><h3>${esc(b.title)}</h3><p>${esc(b.text)}</p></div>`).join('\n      ');
 const steps = c.how.steps.map(s =>
   `<div class="step"><div class="n">${esc(s.index)}</div><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></div>`).join('\n      ');
+const vgroup = g => {
+  const cols = g.items.map(v => {
+    const nm = v.muted
+      ? `<span class="vname vstealth">${esc(v.name)}</span>`
+      : `<span class="vname">${esc(v.name)}</span>`;
+    const inner = `${nm}<span class="vlabel">${esc(v.label)}</span>`;
+    return v.url
+      ? `<a class="vcol" href="${esc(v.url)}" target="_blank" rel="noopener">${inner}</a>`
+      : `<div class="vcol">${inner}</div>`;
+  }).join('');
+  return `<div class="vgroup">
+      <div class="vhead"><h3>${esc(g.title)}</h3><p>${esc(g.note)}</p></div>
+      <div class="vrow">${cols}</div>
+    </div>`;
+};
+// consecutive groups flagged `half` are rendered side by side in one band
+const ventures = (() => {
+  const out = []; let buf = [];
+  const flush = () => {
+    if (!buf.length) return;
+    out.push(`<div class="vpair">${buf.join('')}</div>`);
+    buf = [];
+  };
+  for (const g of c.ventures.groups) {
+    if (g.half) { buf.push(vgroup(g)); if (buf.length === 2) flush(); }
+    else { flush(); out.push(vgroup(g)); }
+  }
+  flush();
+  return out.join('\n      ');
+})();
+
 const cells = c.focus.cells.map(f => `<div><h4>${esc(f.title)}</h4><p>${esc(f.text)}</p></div>`).join('');
 const panel = c.contact.panel_items.map(i =>
   `<div class="pitem"><span class="pn">${esc(i.index)}</span><div><h4>${esc(i.title)}</h4><p>${esc(i.text)}</p></div></div>`).join('\n      ');
@@ -93,6 +124,14 @@ const html = `<!DOCTYPE html>
     <div class="caps">
       ${blocks}
     </div>
+  </div>
+</section>
+
+<section class="panel" id="ventures">
+  <div class="wrap">
+    <p class="eyebrow">${esc(c.ventures.eyebrow)}</p>
+    <h2 class="statement">${esc(c.ventures.heading)}</h2>
+    <div class="vrow">${ventures}</div>
   </div>
 </section>
 
